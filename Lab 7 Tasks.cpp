@@ -204,3 +204,59 @@ int main()
 	}
 	return 0;
 }
+//program 5
+//{
+//	int age,income;
+//	cout << "----Bank Loan Eligibility Checker.----\n" ;
+//	cout << "Enter your Age: " ;
+//	cin >> age ;
+//	if ( age < 18 )
+//	{
+//		cout << " You are not Eligible for a loan because you are under 18 Years of Age.\n";
+//		return 0;
+//	}
+//	cout << "Enter Your Income: $" ;
+//	cin >> income ;
+//	if ( age >= 18 && income < 30000 )
+//	{
+//		cout << "You meet the Age Requirement but are not Eligible for a Loan because your income is below $30000." ;
+//	}
+//	else
+//	{
+//		cout << "Congratulations! You are Eligible for a Loan.";
+//	}
+//	return 0;
+//}
+
+//program 6
+{
+	string 	username,password,role;
+	cout << "---Role Based Access System---\n" ;
+	cout << "Enter Username: " ;
+	cin >> username ;
+	cout << "Enter Password: " ;
+	cin >> password ;
+	if( username == "admin" && password == "password123")
+	{
+		cout << "Authentication Successful.\n" ;
+		cout << " Enter your role: " ;
+		cin >> role ;
+		if ( role == "Admin")
+		{
+			cout << "Full Access.\n" ;
+		}
+		else if ( role == "Guest")
+		{
+			cout << "Limited Access.\n" ;
+		}
+		else
+		{
+			cout << "No Access.\n" ;
+		}
+	}
+	else
+	{
+		cout << "Authenticaton Failed. Access Denied.";
+	}
+	return 0;
+}
